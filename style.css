@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Haas';
+    src: url(AlteHaasGroteskRegular.ttf);
+  }
+
+.titleTS {
+    flex: content;
+    padding-top: 25px;
+}
+
+body {
+    background-color: #070707;
+    color: white;
+    font-family: 'Haas', sans-serif;
+    text-shadow: 0px 0px 20px rgba(199, 110, 207, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.BBG {
+    
+}
+
+.UBIMG {
+    height: auto;
+    float: right;
+    padding: 50px;
+    
+}
+
+.LB {
+    box-shadow: 0px 0px 100px 50px rgba(138, 81, 143, 0.2);
+    border-radius: 8px;
+}
+
+img {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.UB {
+    
+}
+
+.DKAK {
+
+}
+
+.Legacy {
+
+}
