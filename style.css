@@ -33,12 +33,60 @@ h1 {
 .LB {
     box-shadow: 0px 0px 100px 50px rgba(138, 81, 143, 0.2);
     border-radius: 8px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    transform-origin: center center;
+    cursor: pointer;
 }
 
 img {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.LB:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+}
+
+#content.blurred {
+    filter: blur(6px) saturate(0.95);
+    transition: filter 200ms ease;
+    pointer-events: none;
+}
+
+#modalOverlay.hidden { display: none; }
+#modalOverlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.45);
+    z-index: 2000;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+#modalBox {
+    background: #0b0b0b;
+    color: #fff;
+    padding: 20px 22px;
+    border-radius: 10px;
+    max-width: 720px;
+    width: calc(100% - 48px);
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6);
+    position: relative;
+}
+#modalClose {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
 }
 
 .UB {
